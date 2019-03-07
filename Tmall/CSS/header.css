@@ -1,0 +1,491 @@
+/*.........header start.....*/
+#header{
+	width: 100%;
+	/*min-height: 1230px;*/
+	/*当使用min-height:"1230px";时候表示
+	当浏览器宽度小于1230px时 出现滚动条
+	且header部分宽度不再变化*/
+	height: 208px;
+	background-color: #f2f2f2;
+}
+#header .header-nav{
+	position: relative;
+	z-index: 1;
+	/*
+		该属性须和relative/absolute/fixed等连
+		用目的为提升hover时我的淘宝，收藏夹，商
+		家支持等的层级，使其不会被覆盖住
+	*/
+	width: 1225px;
+	height: 32px;
+	margin: auto;
+	color: #999;
+	font-size: 12px;
+	background: #f2f2f2;
+}
+#header .header-nav-left{
+	width: 236px;
+	height: 32px;
+	line-height: 32px;
+	/*background-color: #f2f2f2;*/
+	background-color: #f2f2f2;
+}
+#header .header-nav-left>em{
+	font-style: normal;
+	margin-right: 20px;
+}
+#header .header-nav-left>a{
+	margin-right: 20px;
+	text-decoration: none;
+	color: #999;
+}
+#header .header-nav-left>a:hover{
+	color: #ff0036;
+}
+
+#header .header-nav-right{
+	height: 100%;
+	color: #999;
+	background-color: yellow;
+}
+/*.#header .header-nav-right>div{
+	margin-right: 5px;
+}*/
+#header .header-nav-right .mytaobao{
+	width: 72px;
+	padding: 0 5px 0 0;
+	background-color: #f2f2f2;
+}
+#header .header-nav-right .mytaobao>a{
+	position: relative;
+	display: block;
+	width: 72px;
+	height: 32px;
+	line-height: 32px;
+	text-decoration: none;
+	text-indent: 12px;
+	color: #999;
+}
+#header .header-nav-right .on>a:after{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 4px;
+	width: 0;
+	height: 0;
+	margin: auto;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #999 transparent;
+	border-bottom: none;
+	transition: .3s;
+}
+#header .header-nav-right .ul{
+	display: none;
+	width: 75px;
+	height: 35px;
+	padding: 10px;
+	line-height: 20px;
+	border: 1px solid #f2f2f2;
+	border-top: none;
+	background-color: #fff;
+}
+#header .header-nav-right .ul a{
+	text-decoration: none;
+	color: #999;
+}
+#header .header-nav-right .mytaobao:hover .ul{
+	display: block;
+}
+#header .header-nav-right .mytaobao:hover>a:after{
+	transform:rotate(180deg);
+}
+#header .header-nav-right .mytaobao a:hover{
+	color: #ff0036;
+	text-decoration: underline;
+}
+#header .header-nav-right .mytaobao:hover{
+	background-color: #fff;
+}
+#header .header-nav-right i{
+	color: #ff0036;
+}
+#header .header-nav-right .shopcart{
+	padding: 0 5px;
+	line-height: 32px;
+	font-size: 0;
+	background-color: #f2f2f2;
+}
+#header .header-nav-right .shopcart>a{
+	color: #999;
+	font-size: 12px;
+	text-decoration: none;
+	vertical-align: middle;
+}
+#header .header-nav-right .shopcart>i{
+	vertical-align: middle;
+}
+#header .header-nav-right .shopcart>a>span{
+	color: #666;
+	font-weight: 600;
+	font-size: 14px;
+}
+#header .header-nav-right .shopcart>a:hover{
+	color: #ff0036;
+}
+#header .header-nav-right .shopcart>a:hover span{
+	color: #ff0036;
+}
+/*收藏夹*/
+#header .header-nav-right .favorate{
+	width: 60px;
+	height: 32px;
+	padding: 0 5px 0 0;
+	background-color: #f2f2f2;
+}
+#header .header-nav-right .favorate>a{
+	display: block;
+	width: 100%;
+	border: 1px solid transparent;
+	text-indent: 10px;
+	line-height: 32px;
+}
+#header .header-nav-right .favorate ul{
+	position: absolute;
+	display: none;
+	top: 32px;
+	width: 65px;
+	height: 35px;
+	padding: 5px 10px 10px 10px;
+	border: 1px solid #f2f2f2;
+	border-top: none;
+	line-height: 20px;
+}
+#header .header-nav-right .favorate a{
+	text-decoration: none;
+	color: #999;
+}
+#header .header-nav-right .favorate:hover>a:after{
+	transform:rotate(180deg);
+}
+#header .header-nav-right .favorate:hover ul{
+	display: block;
+	background-color: #fff;
+}
+#header .header-nav-right .favorate a:hover{
+	text-decoration: underline;
+	color: #ff0036;
+}
+#header .header-nav-right .favorate:hover{
+	background-color: #fff;
+}
+/*手机版*/
+#header .header-nav-right .phone{
+	width: 70px;
+	height: 32px;
+	background-color: #f2f2f2;
+	font-size: 0;
+	line-height: 32px;
+}
+#header .header-nav-right .phone>i{
+	padding-left: 5px;
+}
+#header .header-nav-right .phone>a{
+	display: inline-block;
+	padding-right: 10px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #999;
+}
+#header .header-nav-right .phone>a:after{
+	position: absolute;
+	right: 23px;
+	bottom: 5px;
+	content: '';
+	border-style: solid;
+	border-width: 5px;
+	border-color: #fff transparent;
+	border-top: none;
+}
+#header .header-nav-right .phone>img{
+	display: none;
+	position: absolute;
+	left: -49px;
+	top: 28px;
+	box-shadow: 0 0 10px;
+}
+#header .header-nav-right .phone:hover>img{
+	display: block;
+}
+#header .header-nav-right .phone:hover>a{
+	color: #ff0036;
+}
+/*淘宝网*/
+#header .header-nav-right .taobaonet{
+	width: 53px;
+	height: 32px;
+	background-color: #f2f2f2;
+	text-align: center;
+	line-height: 34px;
+}
+#header .header-nav-right .taobaonet>a{
+	color: #999;
+	font-size: 12px;
+	text-decoration: none;
+}
+#header .header-nav-right .taobaonet:hover>a{
+	color: #ff0036;
+}
+/*商家支持*/
+#header .header-nav-right .shoppersup{
+	width: 74px;
+	height: 30px;
+	border: 1px solid transparent;
+	background-color: #f2f2f2;
+}
+#header .header-nav-right .shoppersup a{
+	display: inline-block;
+	width: 74px;
+	height: 100%;
+	line-height: 32px;
+	text-decoration: none;
+	/*text-indent: 10px;*/
+	color: #999;
+}
+#header .header-nav-right .shoppersup>a{
+	text-indent: 10px;
+}
+#header .header-nav-right .shoppersup>div{
+	display: none;
+	position: absolute;
+	left: -71px;
+	width: 144px;
+	height: 173px;
+	border: 1px solid #fff;
+	border-top: none;
+	background-color: #fff;
+}
+#header .header-nav-right .shoppersup>div h3{
+	margin-top: 5px;
+	text-indent: 10px;
+	color: #666;
+}
+#header .header-nav-right .shoper ul{
+	width: 126px;
+	margin: 0 10px;
+}
+#header .header-nav-right .shoper li{
+	display: inline-block;
+	width: 61px;
+	height: 21px;
+	line-height: 21px;
+}
+#header .header-nav-right .shoper li:nth-child(even){
+	text-indent: 6px;
+}
+#header .header-nav-right .shoper li>a{
+	display: inline-block;
+	width: 60px;
+	height: 21px;
+	color: #666;
+	line-height: 21px;
+}
+#header .header-nav-right .shoper ul{
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px dashed #999;
+}
+#header .header-nav-right .shoppersup a:hover{
+	text-decoration: underline;
+	color: #ff0036;
+}
+#header .header-nav-right .shoppersup:hover div{
+	display: inline-block;
+}
+#header .header-nav-right .shoppersup:hover{
+	background-color: #fff;
+	border-color: transparent #eee; 
+}
+#header .header-nav-right .shoppersup:hover>div{
+	border-color: transparent #eee; 
+}
+#header .header-nav-right .shoppersup:hover>a:after{
+	transform:rotate(180deg);
+}
+/*网站导航*/
+#header .header-nav-right .site-nav{
+	width: 90px;
+	height: 32px;
+	background-color: #f2f2f2;
+	border: 1px solid #f2f2f2;
+	border-top: none;
+	border-bottom: none;
+}
+#header .site-nav>i{
+	margin-left: 5px;
+}
+#header .site-nav>a{
+	display: inline-block;
+	width: 62px;
+	height: 32px;
+	line-height: 32px;
+}
+#header .site-nav .hide{
+	display: none;
+	position: absolute;
+	right: -1px;
+	width: 1200px;
+	height: 110px;
+	padding: 16px 0;
+	border: 1px solid #eee;
+	border-top: none;
+	background-color: #fff;
+}
+#header .site-nav .hide .hot{
+	width: 455px;
+	height: 112px;
+	margin-left: 30px;
+	border-right: 1px solid #f5f5f5;
+}
+#header .site-nav .hide .hot>h3{
+	line-height: 40px;
+	color: #f5700a;
+	font-style: normal;
+	font-weight: 0;
+}
+#header .site-nav .hide .hot li{
+	float: left;
+	width: 90px;
+	height: 27px;
+}
+#header .site-nav .hide .Help{
+	width: 180px;
+	border-right: none;
+}
+#header .site-nav .hide div:nth-child(2)>h3{
+	color: #2263d4;
+}
+#header .site-nav .hide div:nth-child(2)>h3>span{
+	display: inline-block;
+	padding-left: 3px;
+}
+#header .site-nav .hide div:nth-child(3)>h3>span{
+	display: inline-block;
+	padding-left: 3px;
+}
+#header .site-nav .hide div:nth-child(1)>h3>span{
+	display: inline-block;
+	padding-left: 3px;
+}
+#header .site-nav .hide div:nth-child(3)>h3{
+	color: #757575;
+}
+#header .header-nav-right .site-nav a{
+	text-decoration: none;
+	color: #999;
+}
+#header .header-nav-right .site-nav a:hover{
+	color: #ff0036;
+	text-decoration: underline;
+}
+#header .header-nav-right .site-nav:hover .hide{
+	display: inline-block;
+}
+#header .header-nav-right .site-nav:hover{
+	background-color: #fff;
+}
+#header .header-nav-right .site-nav:hover>a:after{
+	transform: rotate(180deg);
+}
+/*..........header-nav end..........*/
+
+/*.........header-content start.....*/
+#header .header-content{
+	width: 100%;
+	height: 140px;
+	background-color: #fff;
+}
+#header .header-container{
+	width: 1225px;
+	height: 140px;
+	margin: auto;
+	background-color: #fff;
+}
+#header .header-container>img{
+	margin-top: 14px;
+	margin-left: -10px;
+}
+#header .header-container>.header-form{
+	position: absolute;
+	top: 50px;
+	left: 360px;
+}
+#header .header-form input[type=text]{
+	float: left;
+	width: 492px;
+	height: 36px;
+	border: 2px solid #ff0036;
+	font-size: 15px;
+	text-indent: 5px;
+}
+#header .header-form input[type=submit]{
+	float: left;
+	width: 132px;
+	height: 40px;
+	border-color: #ff0036;
+	border-width: 2px;
+	border-style: solid;
+	font-size: 18px;
+	line-height: 36px;
+	letter-spacing: 5px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #ff0036;
+}
+#header .header-form>ul{
+	display: inline-block;
+	width: 555px;
+	height: 14px;
+	margin-top: 7px;
+}
+#header .header-form>ul>li{
+	float: left;
+	width: 49px;
+	height: 14px;
+	text-align: center;
+	border-right: 1px solid #999;
+	font-weight: 100;
+	font-size: 14px;
+	padding: 0 6px;
+}
+#header .header-form>ul>li:first-child{
+	width: 46px;
+	padding-left: 0;
+	text-align: left;
+}
+#header .header-form>ul>li:last-child{
+	border: none;
+	padding-left: 0;
+}
+#header .header-form>ul a{
+	float: left;
+	width: 55px;
+	height: 14px;
+	line-height: 14px;
+	color: #999;
+	text-decoration: none;
+}
+#header .header-form>ul li:nth-child(even)>a{
+	color: #ff0036;
+}
+#header .header-form>ul li:nth-child(odd)>a{
+	color: #999;
+}
+#header .header-spilt{
+	height: 36px;
+	background-color: #fff;
+}
+/*.........header-content end.....*/
+/*.........header end.....*/
