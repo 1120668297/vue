@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<!--       meta:vp->tab
+		maximum-scale=1.0, minimum-scale=1.0  设置最大最小缩放比例
+		initial-scale=1 移动设备显示时的缩放比例
+		user-scalable=no  移动设备设置不能用手指缩放(安卓可用) 
+	-->
+
+	<!-- 小的可以在大的上面使用   如xs可以在sm  md   lg上面使用 -->
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="BS_Hexa.css">
+</head>
+<body>
+	<!-- 
+		1.大盒子容器不能限制高度
+		2.基础样式写在媒介查询样式之前 
+	-->
+	<header class="container">
+		<div class="col-md-3 logo col-xs-10">
+			<img src="img/Logo.png">
+		</div>
+		<div class="button_hide col-xs-2 visible-xs-block" style="line-height: 122px;">
+			<button type="button" class="btn btn-info">XXX</button>
+		</div>
+		<div class="menu col-md-5 col-md-offset-4 clearfix col-xs-12 hidden-xs">
+			<a href="#">HOME</a>
+			<a href="#">ABOUT</a>
+			<a href="#">WORK</a>
+			<a href="#">SERVICES</a>
+			<a href="#">CONTACT</a>
+		</div>
+	</header>
+
+	<!-- <div class="container-fluid banner">
+		 问题代码 start
+		<div class="container img1">
+			<img src="img/wearedesignagency.png">
+		</div>
+		<div class="container img2">
+			<img src="img/Wearefearless,independent&original..png">
+		</div>
+		 问题代码 end
+		</div> 
+	-->
+
+	<div class="container-fluid service">
+		<div class="title container">
+			<div>
+				<img src="img/H1(2).png" alt="service">
+			</div>
+			<div>
+				<img src="img/P(2).png">
+			</div>
+		</div>
+		<!-- .row有清楚浮动的功能以及使元素具有宽度 -->
+		<div class="list row col-md-10 col-md-offset-1">
+			<div class="item col-md-4">
+				<div class="img3">
+					<img src="img/Shape12.png">
+				</div>
+				<h4>design</h4>
+				<p>Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit, sed do
+				eiusmod tempor incididunt.</p>
+			</div>
+			<div class="item col-md-4">
+				<div class="img3">
+					<img src="img/Shape12.png">
+				</div>
+				<h4>Development</h4>
+				<p>Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit, sed do
+				eiusmod tempor incididunt.</p>
+			</div>
+			<div class="item col-md-4">
+				<div class="img3">
+					<img src="img/Shape12.png">
+				</div>
+				<h4>marketing</h4>
+				<p>Lorem ipsum dolor sit amet,
+					consectetur adipisicing elit, sed do
+				eiusmod tempor incididunt.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="split container-fluid"></div>
+
+	<div class="container-fluid serviceTwo">
+		<div class="title container">
+			<div>
+				<img src="img/H1(2).png" alt="service">
+			</div>
+			<div>
+				<img src="img/P(2).png">
+			</div>
+		</div>
+	</div>
+
+	<div class="container desc">
+		<div class="list col-md-12 col-xs-12">
+			<div class="item col-md-4 col-xs-6">
+				<div class="itemOne">
+					<img src="img/Icon4.png" alt="Icon4">
+					<div class="itemDesc">
+						<h3>design</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+				<div class="itemOne">
+					<img src="img/Icon6.png" alt="Icon4">
+					<div class="itemDesc">
+						<h3>design</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="item col-md-4 col-xs-6">
+				<div class="itemOne">
+					<img src="img/Icon3.png" alt="Icon4">
+					<div class="itemDesc">
+						<h3>design</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+				<div class="itemOne">
+					<img src="img/Icon7.png" alt="Icon4">
+					<div class="itemDesc">
+						<h3>design</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="item col-md-4 col-xs-6">
+				<div class="itemOne">
+					<img src="img/Icon5.png" alt="Icon4">
+					<div class="itemDesc">
+						<h3>design</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+				<div class="itemOne">
+					<img src="img/Icon8.png" alt="Icon4">
+					<div class="itemDesc">
+						<h3>design</h3>
+						<p>Lorem ipsum dolor sit amet,
+							consectetur adipisicing elit, sed do
+							eiusmod tempor incididunt.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- team start -->
+	<div class="container-fluid team">
+		<div>
+			<img src="">
+		</div>
+		<div>
+			<img src="">
+		</div>
+	</div>
+	<!-- team end -->
+</body>
+</html>

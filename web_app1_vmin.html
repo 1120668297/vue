@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<style type="text/css">
+		*{padding: 0; margin: 0; list-style: none;}
+		.clearfix:after{
+			content: ''; display: block; clear: both;
+		}
+		body{
+			width: 100vw; height: 100vh;
+		}
+		.app{
+			display: flex;
+			height: 100%;
+			flex-flow: column;
+		}
+		.app .top{
+			display: flex;
+			height: 13.472vmin;
+			background-color: #ff84b9;
+			color: #fff;
+			font-size: 4.444vmin;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.app .left, .app .right{
+			width: 12.111vmin;
+			text-align: center;
+		}
+		
+		.app .bottom{
+			display: flex;
+			height: 13.472vmin;
+			border-top: 1px solid #e8e8e8;
+			justify-content: space-around;
+		}
+		.app .bottom .item{
+			display: flex;
+			font-size: 3.056vmin;
+			flex-flow: column;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.app .bottom .item img{
+			width: 6.111vmin;
+		}
+		/*main start*/
+		.app main{
+			flex: 1;
+			overflow: auto;
+		}
+		.app main .tab{
+			width: 100%;
+			height: 19.444vmin;
+			background-image: url('img/图层2.png');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: 0 -18.8333vmin;
+		}
+		/*comment start*/
+		.app main .comment{
+			display: flex;
+			padding: 0 15px;
+			flex-flow: column;
+			justify-content: space-between;
+		}
+		.app main .comment .img1,
+		.app main .comment .middle{
+			display: flex;
+			align-items: center;
+		}
+		.app main .comment .title{
+			display: flex;
+			height: 9.583vmin;
+			/*background: pink;*/
+			margin: 2.083vmin;
+			font-size: 4.444vw;
+			font-weight: 520;
+			justify-content: space-between;
+		}
+		.app .comment .title .img1{
+			width: 9.722vmin;
+		}
+		.app main .comment .middle{
+			flex: 1;
+		}
+		.app .comment .title .img2{
+			width: 4.1666vmin;
+		}
+		.app .comment .title .img1 img{
+			width: 7.167vmin;
+			border-radius: 50%;
+			border: 3px solid #ccc;
+		}
+		.app main .comment .middle{
+			display: block;
+			margin-left: 1.3888vmin;
+		}
+		.app main .comment .md-title span, .app main .comment .md-title img{
+			margin-top: 1.3888vmin;
+			vertical-align: middle;
+		}
+		.app main .comment .md-title img{
+			width: 5.072vmin;
+			height: 4.639vmin;
+		}
+		.app main .comment .explain{
+			margin-top: 1.3888vmin;
+			font-size: 2.778vmin;
+			color: #ccc;
+		}
+		.app main .comment .explain span{
+			margin-left: 2.777vmin;
+			color: #ff84b9;
+		}
+
+		.app .comment .content p{
+			margin: 1.3888vmin 0;
+			font-size: 3.889vmin;
+		}
+
+		/*图片展示部分(注意横屏显示vmin不适用)*/
+		.app .comment .content .imgs{
+			display: flex;
+			width: 100%;
+			flex-wrap: wrap;
+		}
+		.app .comment .content .imgs img{
+			width: calc(100% / 3 - 4px);
+			height: calc(100% / 3 - 4px);
+			margin: 0.12152%;
+		}
+		/*.app .comment .content .imgs .pic{
+			width: calc(100% / 3 - 4px);
+			height: calc(100% / 3 - 4px);
+			background-image: url('img/图层5.png');
+			background-size: calc(100% / 3 - 4px);
+		}*/
+		/*图片展示部分(注意横屏显示vmin不适用)*/
+
+		.app .comment .menu{
+			float: left;
+			height: 6.111vmin;
+			margin: 10px 0;
+			font-size: 3.889vmin;
+			color: #999999;
+			line-height: 3.75vmin;
+		}
+		.app .comment .menu .imgList{
+			float: right;
+			display: flex;
+			width: 27.777vmin;
+			justify-content: space-between;
+		}
+		.app .comment .menu .imgList img{
+			width: 6.111vmin;
+			height: 6.111vmin;
+		}
+		
+		/*comment end*/
+		.app main .split{
+			width: inherit;
+			height: 20px;
+			background-color: #f0f0f0;
+		}
+		/*main end*/
+	</style>
+</head>
+<body>
+	<div class="app">
+		<!-- header start -->
+		<header class="top">
+			<div class="left">返回</div>
+			<div class="middle">奥迪A6重庆车友会</div>
+			<div class="right">菜单</div>
+		</header>
+		<!-- header end -->
+
+		<!-- main start -->
+		<main>
+			<div class="main">
+				<!-- 轮播 -->
+				<div class="tab"></div>
+
+				<!-- comment start -->
+				<div class="comment">
+					<div class="title">
+						<div class="img1">
+							<img src="img/图层3.png">
+						</div>
+						<div class="middle">
+							<div class="md-title">
+								<span>橘中带核</span>
+								<img src="img/pay.PNG" height="30">
+							</div>
+							<div class="explain">
+								<time>今天 13:14</time>
+								<span>奥迪A6SUV 五座 黑色</span>
+							</div>
+						</div>
+						<div class="img2"><img src="img/圆角矩形3.png"></div>
+					</div>
+					<div class="content">
+						<p>xsadasdcxzcxzcxz131235312</p>
+						<div class="imgs">
+							<img src="img/图层5.png">
+							<img src="img/图层6.png">
+							<img src="img/图层7.png">
+							<img src="img/图层5.png">
+							<img src="img/图层6.png">
+							<img src="img/图层7.png">
+						</div>
+					</div>
+					<div class="menu clearfix">
+						<span>3赞</span>
+						<span>8评论</span>
+						<div class="imgList">
+							<img src="img/praise_default.png">
+							<img src="img/comment.png">
+							<img src="img/news_default.png">
+						</div>
+					</div>
+				</div>
+				<!-- comment end -->
+				<!-- split start -->
+				<div class="split"></div>
+				<!-- split end -->
+				
+				<!-- comment start -->
+				<div class="comment">
+					<div class="title">
+						<div class="img1">
+							<img src="img/图层3.png">
+						</div>
+						<div class="middle">
+							<div class="md-title">
+								<span>橘中带核</span>
+								<img src="img/pay.PNG" height="30">
+							</div>
+							<div class="explain">
+								<time>今天 13:14</time>
+								<span>奥迪A6SUV 五座 黑色</span>
+							</div>
+						</div>
+						<div class="img2"><img src="img/圆角矩形3.png"></div>
+					</div>
+					<div class="content">
+						<p>xsadasdcxzcxzcxz131235312</p>
+						<div class="imgs">
+							<img src="img/图层5.png">
+							<img src="img/图层6.png">
+							<img src="img/图层7.png">
+							<img src="img/图层5.png">
+							<img src="img/图层6.png">
+							<img src="img/图层7.png">
+						</div>
+					</div>
+					<div class="menu clearfix">
+						<span>3赞</span>
+						<span>8评论</span>
+						<div class="imgList">
+							<img src="img/praise_default.png">
+							<img src="img/comment.png">
+							<img src="img/news_default.png">
+						</div>
+					</div>
+				</div>
+				<!-- comment end -->
+				<!-- split start -->
+				<div class="split"></div>
+				<!-- split end -->
+
+				<!-- comment start -->
+				<div class="comment">
+					<div class="title">
+						<div class="img1">
+							<img src="img/图层3.png">
+						</div>
+						<div class="middle">
+							<div class="md-title">
+								<span>橘中带核</span>
+								<img src="img/pay.PNG" height="30">
+							</div>
+							<div class="explain">
+								<time>今天 13:14</time>
+								<span>奥迪A6SUV 五座 黑色</span>
+							</div>
+						</div>
+						<div class="img2"><img src="img/圆角矩形3.png"></div>
+					</div>
+					<div class="content">
+						<p>xsadasdcxzcxzcxz131235312</p>
+						<div class="imgs">
+							<img src="img/图层5.png">
+							<img src="img/图层6.png">
+							<img src="img/图层7.png">
+							<img src="img/图层5.png">
+							<img src="img/图层6.png">
+							<img src="img/图层7.png">
+							<!-- <div class="pic"></div>
+							<div class="pic"></div>
+							<div class="pic"></div>
+							<div class="pic"></div> -->
+						</div>
+					</div>
+					<div class="menu clearfix">
+						<span>3赞</span>
+						<span>8评论</span>
+						<div class="imgList">
+							<img src="img/praise_default.png">
+							<img src="img/comment.png">
+							<img src="img/news_default.png">
+						</div>
+					</div>
+				</div>
+				<!-- comment end -->
+				<!-- split start -->
+				<div class="split"></div>
+				<!-- split end -->
+
+				<!-- comment start -->
+				<div class="comment">
+					<div class="title">
+						<div class="img1">
+							<img src="img/图层3.png">
+						</div>
+						<div class="middle">
+							<div class="md-title">
+								<span>橘中带核</span>
+								<img src="img/pay.PNG" height="30">
+							</div>
+							<div class="explain">
+								<time>今天 13:14</time>
+								<span>奥迪A6SUV 五座 黑色</span>
+							</div>
+						</div>
+						<div class="img2"><img src="img/圆角矩形3.png"></div>
+					</div>
+					<div class="content">
+						<p>xsadasdcxzcxzcxz131235312</p>
+						<div class="imgs">
+							<img src="img/图层5.png">
+							<img src="img/图层6.png">
+							<img src="img/图层7.png">
+						</div>
+					</div>
+					<div class="menu clearfix">
+						<span>3赞</span>
+						<span>8评论</span>
+						<div class="imgList">
+							<img src="img/praise_default.png">
+							<img src="img/comment.png">
+							<img src="img/news_default.png">
+						</div>
+					</div>
+				</div>
+				<!-- comment end -->
+				<!-- split start -->
+				<div class="split"></div>
+				<!-- split end -->
+			</div>
+		</main>
+		<!-- main end -->
+
+		<!-- footer end -->
+		<footer class="bottom">
+			<div class="item">
+				<img src="img/home_onclick.png">
+				<span>首页</span>
+			</div>
+			<div class="item">
+				<img src="img/carpooling_default.png">
+				<span>车汇</span>
+			</div>
+			<div class="item">
+				<img src="img/news_default.png">
+				<span>消息</span>
+			</div>
+			<div class="item">
+				<img src="img/mine_default.png">
+				<span>我的</span>
+			</div>
+		</footer>
+		<!-- footer end -->
+	</div>
+</body>
+</html>
