@@ -1,0 +1,25 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.fl-l{
+	float: left;
+}
+.fl-r{
+	float: right;
+}
+.pos-r{
+	position: relative;
+}
+.pos-a{
+	position: absolute;
+}
+.clear{
+	clear: both;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
